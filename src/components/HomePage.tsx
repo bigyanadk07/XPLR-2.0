@@ -1,4 +1,6 @@
 import logo1 from "../images/WALLPAPER/plc.png";
+import HomePagePart2 from "./HomePagePart2";
+import HomePagePart3 from "./HomePagePart3";
 
 const HomePage = () => {
   return (
@@ -46,6 +48,8 @@ const HomePage = () => {
           </div>
         </div> */}
       </div>
+      <HomePagePart2 />
+      <HomePagePart3 />
     </>
   );
 };
