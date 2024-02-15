@@ -2,7 +2,8 @@ import logo1 from "../images/WALLPAPER/facebook.png";
 import logo2 from "../images/WALLPAPER/instagram.png";
 import logo3 from "../images/WALLPAPER/twitter.png";
 import logo4 from "../images/WALLPAPER/linkedin.png";
-const BodyFour = () => {
+import { Link } from "react-router-dom";
+const Footer = () => {
   return (
     <>
       <div className=" bg-[#ece7e2] p-5 w-screen relative bottom-0 tracking-widest">
@@ -14,10 +15,11 @@ const BodyFour = () => {
           type="email"
           placeholder="EMAIL"
         />
-        <div className="p-2">
-          <div>HOME</div>
-          <div>CONTACT</div>
-          <div>ABOUT US</div>
+        <div className="p-2 flex flex-col">
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/contact">Contact</Link>
+          <Link to="/signin">Sign in</Link>
           <div className="flex flex-row justify-between">
             <div className="flex text-2xl items-end space-x-4">
               <div>TEAM</div>
@@ -45,4 +47,4 @@ const BodyFour = () => {
     </>
   );
 };
-export default BodyFour;
+export default Footer;

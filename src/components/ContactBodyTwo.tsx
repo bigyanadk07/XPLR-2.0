@@ -1,6 +1,6 @@
-import logo1 from "../WALLPAPER/location (2).png";
-import logo2 from "../WALLPAPER/phone.png";
-import logo3 from "../WALLPAPER/telegram.png";
+import logo1 from "../images/WALLPAPER/location (2).png";
+import logo2 from "../images/WALLPAPER/phone.png";
+import logo3 from "../images/WALLPAPER/telegram.png";
 import logo4 from "../images/WALLPAPER/website.png";
 const ContactBodyTwo = () => {
   return (

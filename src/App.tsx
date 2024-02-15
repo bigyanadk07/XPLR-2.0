@@ -1,8 +1,7 @@
 import AboutUs from "./components/AboutUs";
 import HomePage from "./components/HomePage";
-import HomePagePart2 from "./components/HomePagePart2";
-import HomePagePart3 from "./components/HomePagePart3";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -12,6 +11,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </BrowserRouter>
         {/* <HomePage />

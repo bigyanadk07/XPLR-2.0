@@ -2,8 +2,8 @@ import wall from "../images/WALLPAPER/signup page.jpg";
 const ContactBodyThree = () => {
   return (
     <>
-      <div className="grid grid-cols-2 my-16 ml-6  rounded-5xl">
-        <div className="border border-[#707171] rounded-5xl p-6 relative left-8 shadow-xl">
+      <div className="grid grid-cols-2 mb-16 ml-6 pt-16 rounded-5xl">
+        <div className="border border-[#707171] rounded-5xl p-6 relative left-8 shadow-xl bg-white">
           <div className="inline">
             <div className=" text-4xl">Contact Us</div>
             <div className="pt-5 ">
