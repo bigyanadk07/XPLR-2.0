@@ -1,7 +1,7 @@
-import logo1 from "../WALLPAPER/facebook.png";
-import logo2 from "../WALLPAPER/instagram.png";
-import logo3 from "../WALLPAPER/twitter.png";
-import logo4 from "../WALLPAPER/linkedin.png";
+import logo1 from "../images/WALLPAPER/facebook.png";
+import logo2 from "../images/WALLPAPER/instagram.png";
+import logo3 from "../images/WALLPAPER/twitter.png";
+import logo4 from "../images/WALLPAPER/linkedin.png";
 const BodyFour = () => {
   return (
     <>

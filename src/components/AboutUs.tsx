@@ -1,7 +1,7 @@
 import BodyFour from "../components/BodyFour";
 import BodyThree from "../components/BodyThree";
 import BodyTwo from "../components/BodyTwo";
-import iop from "../WALLPAPER/xplr logo black PNG.png";
+import iop from "../images/WALLPAPER/xplr logo black PNG.png";
 import { Link } from "react-router-dom";
 const AboutUs = () => {
   return (

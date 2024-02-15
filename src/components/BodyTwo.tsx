@@ -1,7 +1,7 @@
-import logo1 from "../WALLPAPER/empathy.png";
-import logo2 from "../WALLPAPER/customer.png";
-import logo3 from "../WALLPAPER/question.png";
-import logo4 from "../WALLPAPER/binoculars.png";
+import logo1 from "../images/WALLPAPER/empathy.png";
+import logo2 from "../images/WALLPAPER/customer.png";
+import logo3 from "../images/WALLPAPER/question.png";
+import logo4 from "../images/WALLPAPER/binoculars.png";
 const BodyTwo = () => {
   return (
     <>

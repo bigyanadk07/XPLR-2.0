@@ -1,6 +1,6 @@
-import logo1 from "../WALLPAPER/man.png";
-import logo2 from "../WALLPAPER/man (1).png";
-import logo3 from "../WALLPAPER/man (2).png";
+import logo1 from "../images/WALLPAPER/man.png";
+import logo2 from "../images/WALLPAPER/man (1).png";
+import logo3 from "../images/WALLPAPER/man (2).png";
 const BodyThree = () => {
   return (
     <>
