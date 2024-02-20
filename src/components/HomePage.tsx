@@ -1,4 +1,5 @@
 import logo from "../images/WALLPAPER/xplr logo white PNG.png";
+import logoblack from "../images/WALLPAPER/xplr logo black PNG.png";
 import logo1 from "../images/WALLPAPER/plc.png";
 import Footer from "./Footer";
 import HomePagePart2 from "./HomePagePart2";
@@ -6,14 +7,17 @@ import HomePagePart3 from "./HomePagePart3";
 import banner1 from "../images/WALLPAPER/maldives.jpg";
 import banner2 from "../images/WALLPAPER/venice.jpg";
 import Carousel from "react-multi-carousel";
+import { Parallax } from "react-scroll-parallax";
 const Banner = [
   {
     image: banner1,
     name: "Maldives",
+    color: true,
   },
   {
     image: banner2,
     name: "Venice",
+    color: false,
   },
 ];
 const HomePage = () => {
@@ -39,7 +43,7 @@ const HomePage = () => {
     <>
       <Carousel
         responsive={responsive}
-        arrows={false}
+        // arrows={false}
         autoPlay={true}
         autoPlaySpeed={5000}
         infinite={true}
@@ -51,20 +55,56 @@ const HomePage = () => {
               <div className="absolute top-0 left-0 right-0">
                 <div className="flex flex-col">
                   <div className="flex items-center justify-center mt-5">
-                    <img src={logo} className="w-[100px] h-[100px]" />
+                    {n.color ? (
+                      <img src={logo} className="w-[100px] h-[100px]" />
+                    ) : (
+                      <img src={logoblack} className="w-[100px] h-[100px]" />
+                    )}
                   </div>
-                  <div className="flex items-center justify-center w-full mt-5">
-                    <div className="py-2 px-5 text-white hover:underline decoration-white cursor-pointer">
-                      Home
-                    </div>
-                    <div className="py-2 px-5 text-white hover:underline decoration-white cursor-pointer">
-                      About Us
-                    </div>
-                    <div className="py-2 px-5 text-white hover:underline decoration-white cursor-pointer">
-                      Contact
-                    </div>
-                    <div className="py-2 px-6 text-white hover:bg-gray-300 hover:text-black decoration-white cursor-pointer rounded-3xl border border-white ">
-                      Sign In
+                  <div className="flex items-center justify-center ">
+                    <div
+                      className={`flex items-center justify-center w-1/2 mt-5 cursor-pointer rounded-3xl border ${
+                        n.color
+                          ? "border-white bg-white bg-opacity-25"
+                          : "border-black bg-white bg-opacity-70"
+                      }`}
+                    >
+                      <div
+                        className={`py-2 px-5 font-bold ${
+                          n.color
+                            ? "text-white hover:border-white decoration-white"
+                            : "text-black hover:border-black decoration-black"
+                        } hover:underline hover:bg-transparent hover:border-y-0 hover:border-x  cursor-pointer`}
+                      >
+                        Home
+                      </div>
+                      <div
+                        className={`py-2 px-5 font-bold ${
+                          n.color
+                            ? "text-white hover:border-white decoration-white"
+                            : "text-black hover:border-black decoration-black"
+                        } hover:underline hover:bg-transparent hover:border-y-0 hover:border-x  cursor-pointer`}
+                      >
+                        About Us
+                      </div>
+                      <div
+                        className={`py-2 px-5 font-bold ${
+                          n.color
+                            ? "text-white hover:border-white decoration-white"
+                            : "text-black hover:border-black decoration-black"
+                        } hover:underline hover:bg-transparent hover:border-y-0 hover:border-x  cursor-pointer`}
+                      >
+                        Contact
+                      </div>
+                      <div
+                        className={`py-2 px-5 font-bold ${
+                          n.color
+                            ? "text-white hover:border-white decoration-white"
+                            : "text-black hover:border-black decoration-black"
+                        } hover:underline hover:bg-transparent hover:border-y-0 hover:border-x  cursor-pointer`}
+                      >
+                        Sign In
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -83,48 +123,12 @@ const HomePage = () => {
                 </div>
               </div>
             </>
-            // <>
-            //   <div
-            //     className={`w-screen h-screen bg-[url('./src/images/WALLPAPER/maldives.jpg')] bg-cover`}
-            //   >
-            //     <div className="inline">
-            //       <div className="text-white text-center p-5 text-[40px]">
-            //         XPLR
-            //       </div>
-            //       <div className="flex items-center justify-center w-full mt-5">
-            //         <div className="py-2 px-5 text-white hover:underline decoration-white cursor-pointer">
-            //           Home
-            //         </div>
-            //         <div className="py-2 px-5 text-white hover:underline decoration-white cursor-pointer">
-            //           About Us
-            //         </div>
-            //         <div className="py-2 px-5 text-white hover:underline decoration-white cursor-pointer">
-            //           Contact
-            //         </div>
-            //         <div className="py-2 px-6 text-white hover:bg-slate-400 decoration-white cursor-pointer rounded-3xl border border-white ">
-            //           Sign In
-            //         </div>
-            //       </div>
-            //     </div>
-            //     <div className="absolute bottom-1 right-2 mb-5 mr-4">
-            //       <div className="flex">
-            //         <div>
-            //           <img src={logo1} className="w-10 h-10" />
-            //         </div>
-            //         <div className="inline">
-            //           <div className="flex items-center text-[20px] text-white">
-            //             Maldives
-            //           </div>
-            //           <div className="border border-white mt-2"></div>
-            //         </div>
-            //       </div>
-            //     </div>
-            //   </div>
-            // </>
           );
         })}
       </Carousel>
-
+      {/* <Parallax speed={-10}>
+        <div>hello</div>
+      </Parallax> */}
       <HomePagePart2 />
       <HomePagePart3 />
       <Footer />
