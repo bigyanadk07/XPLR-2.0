@@ -1,4 +1,4 @@
-import wall from "../images/WALLPAPER/signup page.jpg";
+import wall from "../images/WALLPAPER/signup-page.jpg";
 const ContactBodyThree = () => {
   return (
     <>
