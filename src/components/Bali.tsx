@@ -3,10 +3,16 @@ import bali2 from "../images/WALLPAPER/c4fedab1-4041-4db5-9245-97439472cf2c.jpg"
 import img from "../images/WALLPAPER/7.png";
 import Footer from "./Footer";
 import Header from "./Header";
-import { FaArrowRight } from "@react-icons/all-files/fa/FaArrowRight";
-import { FaArrowLeft } from "@react-icons/all-files/fa/FaArrowLeft";
-import { FaChevronLeft } from "@react-icons/all-files/fa/FaChevronLeft";
-import { FaChevronRight } from "@react-icons/all-files/fa/FaChevronRight";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { FaArrowRight } from "/@react-icons/all-files/fa/FaArrowRight";
+// import { FaArrowLeft } from "@react-icons/all-files/fa/FaArrowLeft";
+// import { FaChevronLeft } from "@react-icons/all-files/fa/FaChevronLeft";
+// import { FaChevronRight } from "@react-icons/all-files/fa/FaChevronRight";
+import {
+  faArrowRight,
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 import acc from "../images/WALLPAPER/905462.png";
 import ap from "../images/WALLPAPER/68380.png";
 import ex from "../images/WALLPAPER/637126.png";
@@ -188,7 +194,7 @@ const Bali: React.FC<AsNavForProps> = () => {
                         <div className="ml-4 flex justify-center items-center gap-2 text-blue-500 font-semibold border-2 border-blue-500 py-2 px-5 rounded-3xl hover:bg-white hover:bg-opacity-25 cursor-pointer">
                           <div>{n.name2}</div>
                           <div>
-                            <FaArrowRight />
+                            <FontAwesomeIcon icon={faArrowRight} />
                           </div>
                         </div>
                       </div>
@@ -267,7 +273,7 @@ const Bali: React.FC<AsNavForProps> = () => {
                   onClick={previous}
                   className="absolute top-[38%] left-[65px] text-[20px] hover:text-slate-400"
                 >
-                  <FaChevronLeft />
+                  <FontAwesomeIcon icon={faChevronLeft} />
                 </button>
                 <div className="slider-container flex flex-col gap-5">
                   <Slider asNavFor={nav2} ref={sliderRef1} {...settings}>
@@ -317,7 +323,7 @@ const Bali: React.FC<AsNavForProps> = () => {
                   onClick={next}
                   className="absolute top-[38%] left-[45%] text-[20px] hover:text-slate-400"
                 >
-                  <FaChevronRight />
+                  <FontAwesomeIcon icon={faChevronRight} />
                 </button>
               </div>
             </div>
