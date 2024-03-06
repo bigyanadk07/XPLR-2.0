@@ -6,6 +6,7 @@ import Destinations from "./components/Destinations";
 import Bali from "./components/Bali";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
+import Bucketlist from "./components/Bucketlist";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/signup" element={<SignUp />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/bali" element={<Bali />} />
+            <Route path="/bucketlist" element={<Bucketlist />} />
           </Routes>
         </BrowserRouter>
         {/* <HomePage />

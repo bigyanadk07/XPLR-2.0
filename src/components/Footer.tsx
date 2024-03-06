@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-row bg-black text-white justify-evenly p-10 px-20">
+      <div className=" flex flex-row bg-black text-white justify-evenly p-10 px-20 w-[100%]">
         <div className="w-[25%] -ml-[5%]">
           <div className="text-2xl mb-3">Company Info</div>
           <div>
@@ -49,10 +49,16 @@ const Footer = () => {
         </div>
         <div className="w-[25%]">
           <div className="text-2xl mb-3 ">Quick Links</div>
-          <div className="flex flex-col">
-            <Link to="/">Home</Link>
-            <Link to="/about">About Us</Link>
-            <Link to="/contact">Contact</Link>
+          <div className="flex flex-col ">
+            <Link className="pb-2" to="/">
+              Home
+            </Link>
+            <Link className="pb-2" to="/about">
+              About Us
+            </Link>
+            <Link className="pb-2" to="/contact">
+              Contact
+            </Link>
           </div>
         </div>
       </div>
