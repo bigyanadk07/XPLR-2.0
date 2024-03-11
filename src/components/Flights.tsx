@@ -14,7 +14,7 @@ const FlightsPage = () => {
     },
     {
       id: 2,
-      origin: 'London',
+      origin: 'London ',
       destination: 'Paris',
       departureDate: '2024-03-20',
       arrivalDate: '2024-03-20',

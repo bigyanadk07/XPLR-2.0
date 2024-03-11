@@ -18,7 +18,7 @@ const HotelPage = () => {
       },
       {
         id: 3,
-        name: 'Mountain Lodge Retreat',
+        name: 'Mountain Lodge',
         location: 'Swiss Alps',
         price: 480,
         imageUrl: 'https://images.unsplash.com/photo-1596436889106-be35e843f974?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
