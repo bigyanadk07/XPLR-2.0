@@ -62,6 +62,9 @@ const Footer = () => {
               <Link className="pb-2" to="/contact">
                 Contact
               </Link>
+              <Link className="pb-2" to="/SignIn">
+                Sign In
+              </Link>
             </div>
           </div>
         </div>
