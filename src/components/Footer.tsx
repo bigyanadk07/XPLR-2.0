@@ -65,7 +65,6 @@ const Footer = () => {
               <Link className="pb-2" to="/SignIn">
                 Sign In
               </Link>
-              <p>hello</p>
             </div>
           </div>
         </div>
