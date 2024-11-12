@@ -7,12 +7,16 @@ import Bali from "./components/Bali";
 import SignUp from "./components/SignUp";
 import SignIn from "./components/SignIn";
 import Bucketlist from "./components/Bucketlist";
+import Hotels from "./components/Hotels";
+ import Flights from "./components/Flights";
+ import Header from "./components/Header";
 
 const App = () => {
   return (
     <>
       <div className="overflow-x-hidden w-">
         <BrowserRouter>
+        <Header/>
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutUs />} />
@@ -22,6 +26,8 @@ const App = () => {
             <Route path="/signin" element={<SignIn />} />
             <Route path="/bali" element={<Bali />} />
             <Route path="/bucketlist" element={<Bucketlist />} />
+            <Route path="/hotels" element={<Hotels />} />
+            <Route path="/flights" element={<Flights />} />
           </Routes>
         </BrowserRouter>
         {/* <HomePage />
